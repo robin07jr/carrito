@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="row__logoCarrito">
+            <div class="container header__logoCarrito">
+                <h1 class="header__title">Productos</h1>
+                <a href="carrito.html" class="header__carrito__container">
+                    <img src="img/carrito.svg" alt="icono carrito" class="header__carrito">
+                    <p class="carrito__number" id="carrito__number"></p>
+                </a>
+            </div>
+        </div>
+     </header>
+    
+    <main class="container main__carrito" id="main__carrito">
+        <section class="row__compras" id="row__compras">
+
+        </section>
+
+        <aside class="row__enviarCompra">
+            <div class="row__envioResumen">
+                <p class="envioResumen__titulo">Resumen</p>
+                <div class="envioResumen__pagos">
+                    <p>Total:</p>
+                    <p>$<span id="envioResumen__pagoAcumulado">0</span> COL</p>
+                </div>
+                <button class="btn__agregar__carrito">Realizar Pago</button>
+            </div>
+
+            <div class="row__seguirComprando">
+                <a href="inicio.html" class="btn__agregar__carrito btn__seguirComprando">Volver<span><i class="fa-solid fa-arrows-rotate"></i></span></a>
+            </div>
+        </aside>
+    </main>
+    <script src="https://kit.fontawesome.com/7dd14a9268.js" crossorigin="anonymous"></script>
+    <script src="js/db_albums.js"></script>
+    <script src="js/appCarrito.js"></script>
+</body>
+</html>
